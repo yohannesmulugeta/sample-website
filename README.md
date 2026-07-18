@@ -1,47 +1,62 @@
-# Sample Social — Scroll-Driven Agency Website
+# Admaki Advertising — Creative & Technology Website
 
-A lightweight, original creative-agency website inspired by bold social-first agency experiences. It is built with plain HTML, CSS and JavaScript so it can run directly on GitHub Pages without a build step.
+A scroll-driven one-page website for Admaki Advertising, an Addis Ababa creative and technology studio offering social media marketing, website development, ERP system development, branding, content production and advertising support.
 
-## Included
+The website is built with plain HTML, CSS and JavaScript so it can publish directly from GitHub Pages without a build step.
 
-- Animated loading screen
-- Full-screen hero reveal
-- Scroll-scrubbed hero movement
-- Long pinned manifesto section
-- Progressive word highlighting
-- Sticky stacked project cards
-- Desktop horizontal project scrolling
-- Responsive vertical project layout on mobile
-- Scroll-controlled shapes and typography
-- Animated services marquee
-- Full-screen contact section
-- Mobile navigation
+## Main sections
+
+- Animated Admaki loading screen
+- Full-screen brand and technology hero
+- Scroll-controlled business manifesto
+- Three sticky core-solution cards
+  - Social media marketing
+  - Website development
+  - ERP system development
+- Horizontal additional-services experience on desktop
+- Responsive vertical experience on mobile
+- About Admaki section
+- Six detailed service rows
+- Large contact section
+- Mobile menu
 - Reduced-motion accessibility fallback
-- Direct GitHub Pages publishing from `main`
 
-## Edit the content
+## Ethiopian visual direction
 
-Most text is inside `index.html`.
+The design uses a modern Ethiopian identity rather than copying a traditional layout:
 
-Important placeholders to replace:
+- Deep coffee background
+- Warm cream surfaces
+- Gold, terracotta, green and indigo accents
+- Ethiopic typography using Noto Sans Ethiopic
+- CSS-generated geometric bands inspired by Tibeb and woven Habesha patterns
+- Amharic supporting text used selectively
 
-- `SAMPLE / SOCIAL` — agency name
-- `hello@example.com` — email address
-- `251900000000` — WhatsApp number
-- Project titles, descriptions and services
-- Addis Ababa location text if needed
+No cultural artwork or external campaign media is copied. The first version uses original CSS-generated graphics.
 
-## Change the design
+## Important contact placeholders
 
-The main colours are at the top of `styles.css`:
+Replace these values inside `index.html` before using the website publicly:
+
+- `your-email@example.com`
+- `251900000000`
+
+Also review the company description, exact service wording, office location and Amharic copy before the final commercial launch.
+
+## Editing content
+
+Most visible text is inside `index.html`.
+
+The visual system is inside `styles.css`. Main colours are defined at the top:
 
 ```css
 :root {
-  --black: #0a0a0a;
-  --white: #f4f0e8;
-  --orange: #ff4d00;
-  --green: #d8ff43;
-  --violet: #9d7cff;
+  --ink: #170f0b;
+  --cream: #f6ecdc;
+  --gold: #d5a53d;
+  --terracotta: #c34b32;
+  --green: #1f6a57;
+  --indigo: #4a3f82;
 }
 ```
 
@@ -49,7 +64,7 @@ Scroll animations are controlled in `script.js` using GSAP and ScrollTrigger loa
 
 ## GitHub Pages
 
-This project is prepared for direct branch publishing. The repository root contains `index.html` and `.nojekyll`.
+The project is prepared for direct branch publishing. The repository root contains `index.html` and `.nojekyll`.
 
 In the repository settings:
 
@@ -65,14 +80,19 @@ Expected URL:
 
 ## Local preview
 
-Opening `index.html` directly works, but a local server is better:
-
 ```bash
 python -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
 
-## Media
+## Recommended next content upgrade
 
-The first version uses original CSS-generated artwork instead of copied campaign images. Real project images and videos can be added later without changing the scroll architecture.
+Replace the CSS-generated service artwork with real Admaki material when available:
+
+- Social media campaign mockups
+- Website screenshots
+- ERP dashboard screenshots
+- Team or behind-the-scenes photographs
+- Client logos that Admaki has permission to display
+- Measurable project results
