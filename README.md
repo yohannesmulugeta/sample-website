@@ -17,7 +17,7 @@ A lightweight, original creative-agency website inspired by bold social-first ag
 - Full-screen contact section
 - Mobile navigation
 - Reduced-motion accessibility fallback
-- Automatic GitHub Pages deployment workflow
+- Direct GitHub Pages publishing from `main`
 
 ## Edit the content
 
@@ -49,9 +49,15 @@ Scroll animations are controlled in `script.js` using GSAP and ScrollTrigger loa
 
 ## GitHub Pages
 
-The workflow at `.github/workflows/deploy-pages.yml` deploys the root of the repository whenever code is pushed to `main`.
+This project is prepared for direct branch publishing. The repository root contains `index.html` and `.nojekyll`.
 
-In the repository settings, open **Settings → Pages** and confirm that **Source** is set to **GitHub Actions**.
+In the repository settings:
+
+1. Open **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**.
+3. Select branch **main**.
+4. Select folder **/(root)**.
+5. Click **Save**.
 
 Expected URL:
 
